@@ -1,0 +1,17 @@
+{
+  "name": "vulnlab-dast",
+  "version": "1.0.0",
+  "description": "App minima con login + dashboard y debilidades de configuracion, para pruebas DAST autenticadas (Aikido). Solo entornos de prueba autorizados.",
+  "main": "server.js",
+  "private": true,
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "express-session": "^1.18.0"
+  }
+}
