@@ -17,9 +17,12 @@
  */
 const express = require('express');
 const session = require('express-session');
+const helmet = require('helmet');
 
 const PORT = process.env.PORT || 3000;
 const app = express();
+
+app.use(helmet());
 
 // WEAK: no se desactiva x-powered-by, asi el DAST detecta el framework/version.
 // Para endurecer: app.disable('x-powered-by');
